@@ -1,0 +1,349 @@
+/ *! normalize.css v8.0.1 | Licenza MIT | github.com/necolas/normalize.css * /
+
+/ * Documento
+   ================================================== ======================== * /
+
+/ **
+ * 1. Correggere l'altezza della linea in tutti i browser.
+ * 2. Impedisci le regolazioni della dimensione del carattere dopo i cambiamenti di orientamento in iOS.
+ * /
+
+html {
+  altezza della linea: 1,15; / * 1 * /
+  -webkit-text-size-Adjust: 100%; / * 2 * /
+}
+
+/ * Sezioni
+   ================================================== ======================== * /
+
+/ **
+ * Rimuovere il margine in tutti i browser.
+ * /
+
+body {
+  margine: 0;
+}
+
+/ **
+ * Rende l'elemento `principale` in modo coerente in IE.
+ * /
+
+principale {
+  blocco di visualizzazione;
+}
+
+/ **
+ * Correggi la dimensione del carattere e il margine sugli elementi `h1` all'interno di` section` e
+ * contesti di articoli in Chrome, Firefox e Safari.
+ * /
+
+h1 {
+  dimensione carattere: 2em;
+  margine: 0.67em 0;
+}
+
+/ * Raggruppamento di contenuti
+   ================================================== ======================== * /
+
+/ **
+ * 1. Aggiungi il dimensionamento corretto della casella in Firefox.
+ * 2. Mostra l'overflow in Edge e IE.
+ * /
+
+ora {
+  dimensionamento della casella: content-box; / * 1 * /
+  altezza: 0; / * 1 * /
+  troppo pieno: visibile; / * 2 * /
+}
+
+/ **
+ * 1. Correggere l'ereditarietà e il ridimensionamento della dimensione del carattere in tutti i browser.
+ * 2. Correggi le dimensioni dei caratteri dispari `em` in tutti i browser.
+ * /
+
+pre {
+  famiglia di caratteri: monospace, monospace; / * 1 * /
+  dimensione carattere: 1em; / * 2 * /
+}
+
+/ * Semantica a livello di testo
+   ================================================== ======================== * /
+
+/ **
+ * Rimuovere lo sfondo grigio sui collegamenti attivi in ​​IE 10.
+ * /
+
+un {
+  colore di sfondo: trasparente;
+}
+
+/ **
+ * 1. Rimuovere il bordo inferiore in Chrome 57-
+ * 2. Aggiungi la decorazione del testo corretta in Chrome, Edge, IE, Opera e Safari.
+ * /
+
+abbr [titolo] {
+  bordo inferiore: nessuno; / * 1 * /
+  decorazione del testo: sottolineato; / * 2 * /
+  decorazione del testo: sottolineatura punteggiata; / * 2 * /
+}
+
+/ **
+ * Aggiungi lo spessore del carattere corretto in Chrome, Edge e Safari.
+ * /
+
+b,
+forte {
+  font-weight: più audace;
+}
+
+/ **
+ * 1. Correggere l'ereditarietà e il ridimensionamento della dimensione del carattere in tutti i browser.
+ * 2. Correggi le dimensioni dei caratteri dispari `em` in tutti i browser.
+ * /
+
+codice,
+kbd,
+samp {
+  famiglia di caratteri: monospace, monospace; / * 1 * /
+  dimensione carattere: 1em; / * 2 * /
+}
+
+/ **
+ * Aggiungi la dimensione del carattere corretta in tutti i browser.
+ * /
+
+piccolo {
+  dimensione carattere: 80%;
+}
+
+/ **
+ * Impedisci agli elementi `sub` e` sup` di influenzare l'altezza della linea in
+ * tutti i browser.
+ * /
+
+sub,
+sup {
+  dimensione carattere: 75%;
+  altezza della linea: 0;
+  posizione: relativa;
+  vertical-align: baseline;
+}
+
+sub {
+  in basso: -0,25em;
+}
+
+sup {
+  sopra: -0.5em;
+}
+
+/ * Contenuto incorporato
+   ================================================== ======================== * /
+
+/ **
+ * Rimuovere il bordo sulle immagini all'interno dei collegamenti in IE 10.
+ * /
+
+img {
+  stile bordo: nessuno;
+}
+
+/* Le forme
+   ================================================== ======================== * /
+
+/ **
+ * 1. Modifica gli stili dei caratteri in tutti i browser.
+ * 2. Rimuovere il margine in Firefox e Safari.
+ * /
+
+pulsante,
+ingresso,
+optgroup,
+Selezionare,
+textarea {
+  famiglia di caratteri: ereditare; / * 1 * /
+  dimensione carattere: 100%; / * 1 * /
+  altezza della linea: 1,15; / * 1 * /
+  margine: 0; / * 2 * /
+}
+
+/ **
+ * Mostra l'overflow in IE.
+ * 1. Mostra l'overflow in Edge.
+ * /
+
+pulsante,
+input {/ * 1 * /
+  troppo pieno: visibile;
+}
+
+/ **
+ * Rimuovere l'eredità della trasformazione del testo in Edge, Firefox e IE.
+ * 1. Rimuovere l'eredità della trasformazione del testo in Firefox.
+ * /
+
+pulsante,
+seleziona {/ * 1 * /
+  trasformazione del testo: nessuna;
+}
+
+/ **
+ * Correggere l'incapacità di dare uno stile ai tipi cliccabili in iOS e Safari.
+ * /
+
+pulsante,
+[Type = "button"],
+[Type = "reset"],
+[type = "submit"] {
+  -webkit-aspetto: pulsante;
+}
+
+/ **
+ * Rimuovere il bordo interno e l'imbottitura in Firefox.
+ * /
+
+Pulsante :: - moz-focus-interiore,
+[Type = "button"] :: - moz-focus-interiore,
+[Type = "reset"] :: - moz-focus-interiore,
+[type = "submit"] :: - moz-focus-inner {
+  stile bordo: nessuno;
+  imbottitura: 0;
+}
+
+/ **
+ * Ripristina gli stili di messa a fuoco non impostati dalla regola precedente.
+ * /
+
+Pulsante: -moz-focusring,
+[Type = "button"]: - focusring moz-,
+[Type = "reset"]: - moz-focusring,
+[type = "submit"]: - moz-focusring {
+  struttura: ButtonText punteggiato 1px;
+}
+
+/ **
+ * Correggi il riempimento in Firefox.
+ * /
+
+fieldset {
+  imbottitura: 0.35em 0.75em 0.625em;
+}
+
+/ **
+ * 1. Correggere il ritorno a capo del testo in Edge e IE.
+ * 2. Correggere l'eredità del colore dagli elementi `fieldset` in IE.
+ * 3. Rimuovere l'imbottitura in modo che gli sviluppatori non vengano sorpresi quando si azzerano
+ * Elementi `fieldset` in tutti i browser.
+ * /
+
+leggenda {
+  dimensionamento scatola: bordo-scatola; / * 1 * /
+  colore: eredita; / * 2 * /
+  display: tabella; / * 1 * /
+  larghezza massima: 100%; / * 1 * /
+  imbottitura: 0; / * 3 * /
+  spazio bianco: normale; / * 1 * /
+}
+
+/ **
+ * Aggiungi il corretto allineamento verticale in Chrome, Firefox e Opera.
+ * /
+
+progresso {
+  vertical-align: baseline;
+}
+
+/ **
+ * Rimuovere la barra di scorrimento verticale predefinita in IE 10+.
+ * /
+
+textarea {
+  overflow: auto;
+}
+
+/ **
+ * 1. Aggiungere il dimensionamento corretto della scatola in IE 10.
+ * 2. Rimuovere l'imbottitura in IE 10.
+ * /
+
+[Type = "checkbox"],
+[type = "radio"] {
+  dimensionamento scatola: bordo-scatola; / * 1 * /
+  imbottitura: 0; / * 2 * /
+}
+
+/ **
+ * Correggi lo stile del cursore dei pulsanti di incremento e decremento in Chrome.
+ * /
+
+[Type = "numero"] :: --interno-spin-tasto webkit,
+[type = "number"] :: - webkit-outer-spin-button {
+  altezza: auto;
+}
+
+/ **
+ * 1. Correggere l'aspetto strano in Chrome e Safari.
+ * 2. Correggi lo stile del contorno in Safari.
+ * /
+
+[type = "search"] {
+  -webkit-aspetto: campo di testo; / * 1 * /
+  contorno-offset: -2px; / * 2 * /
+}
+
+/ **
+ * Rimuovi l'imbottitura interna in Chrome e Safari su macOS.
+ * /
+
+[type = "search"] :: - webkit-search-decoration {
+  -webkit-aspetto: nessuno;
+}
+
+/ **
+ * 1. Correggere l'incapacità di dare uno stile ai tipi cliccabili in iOS e Safari.
+ * 2. Cambia le proprietà del carattere in `eredita` in Safari.
+ * /
+
+:: - webkit-file-upload-button {
+  -webkit-aspetto: pulsante; / * 1 * /
+  carattere: ereditare; / * 2 * /
+}
+
+/ * Interattivo
+   ================================================== ======================== * /
+
+/ *
+ * Aggiungi la visualizzazione corretta in Edge, IE 10+ e Firefox.
+ * /
+
+dettagli {
+  blocco di visualizzazione;
+}
+
+/ *
+ * Aggiungi la visualizzazione corretta in tutti i browser.
+ * /
+
+sommario {
+  display: lista-elemento;
+}
+
+/ * Varie
+   ================================================== ======================== * /
+
+/ **
+ * Aggiungi il display corretto in IE 10+.
+ * /
+
+modello {
+  display: nessuno;
+}
+
+/ **
+ * Aggiungi il display corretto in IE 10.
+ * /
+
+[nascosto] {
+  display: nessuno;
+}
